@@ -24,6 +24,7 @@ Feature:Carvana functionality
     When user clicks on "VIN" button
     And user enters vin number as "12345678912345678"
     And user clicks on "GET MY OFFER" button
+    #Then user should see "We couldn’t find that VIN. Please check your entry and try again." text
 
   @AutoLoanCalculator
   Scenario: Validate AUTO LOAN CALCULATOR under FINANCING menu item
@@ -34,4 +35,4 @@ Feature:Carvana functionality
     And user selects "What’s Your credit Score?" as "Excellent: 780"
     And user selects "Choose Your Loan Terms" as "60 Months"
     And user enters "What is Your Down Payment?" as "1,500"
-    Then user should see the monthly payment as "167.00"00
+    Then user should see the monthly payment as "154.00"00

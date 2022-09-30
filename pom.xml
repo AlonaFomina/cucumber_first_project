@@ -5,8 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>cucumber_first_projec</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>cucumber_framework</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -14,6 +13,7 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -61,11 +61,13 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <includes>
-                        <include>**/*Runner.java</include>
+                        <include>**/*runner.java</include>
                     </includes>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+    <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+
 
 </project>
